@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class FPCharacterControllerMovement : MonoBehaviour
 {
     private CharacterController characterController;
@@ -9,12 +9,13 @@ public class FPCharacterControllerMovement : MonoBehaviour
     private Transform characterTransform;
     private Vector3 movementDirection;
     private bool isCrouched;
-
+       
     private float originHeight;
     public float RunningSpeed;
     public float WalkSpeed;
     public float CrouchSpeed;
-
+    public int stamina = 400;
+    public Text StaminaText;
     public float JumpHeight;
     public float Gravity = 9.8f;
     public float CrouchHeight;
@@ -34,6 +35,7 @@ public class FPCharacterControllerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        UpdateStaminaInfo(stamina.ToString());
         float currentSpeed = WalkSpeed;
         if (characterController.isGrounded)
         {
@@ -50,17 +52,17 @@ public class FPCharacterControllerMovement : MonoBehaviour
                 movementDirection.y = JumpHeight;
             }
             //实现左shift加速
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift) && stamina >= 2)
             {
-                if (isCrouched)
-                {
-                    currentSpeed = CrouchSpeed;
-                }
-                else
+                if (!isCrouched && stamina >= 30)
                 {
                     currentSpeed = RunningSpeed;
                 }
-
+                else
+                {
+                    currentSpeed = CrouchSpeed;
+                }
+                stamina -= 2;
             }
             else
             {
@@ -71,6 +73,10 @@ public class FPCharacterControllerMovement : MonoBehaviour
                 else
                 {
                     currentSpeed = WalkSpeed;
+                    if(stamina <= 399)
+                    {
+                       stamina += 1;
+                    }
                 }
             }
 
@@ -96,5 +102,10 @@ public class FPCharacterControllerMovement : MonoBehaviour
             yield return null;
             characterController.height = Mathf.SmoothDamp(characterController.height, _target, ref currentHeight, Time.deltaTime * 5);
         }
+    }
+
+    private void UpdateStaminaInfo(string _stamina)
+    {
+        StaminaText.text = "Stamina: " + _stamina;
     }
 }

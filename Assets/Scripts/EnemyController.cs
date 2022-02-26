@@ -115,7 +115,8 @@ public class EnemyController : MonoBehaviour
         //}
         //agent.velocity = (player.position - transform.position).normalized * enemySpeed;
         //agent.destination = player.position;
-        agent.speed = 5.0f;
+        agent.speed = 8.0f;
+        agent.acceleration = 10.0f;
         agent.SetDestination(player.position);
     }
 
