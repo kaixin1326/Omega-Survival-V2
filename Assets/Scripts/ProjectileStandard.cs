@@ -164,7 +164,14 @@ public class ProjectileStandard : MonoBehaviour
             // direction.y = 0;
             // rb.AddForce(direction.normalized * 1, ForceMode.Impulse);
             //damageable.getAncestor(damageable.gameObject).GetComponent<EnemyController>().enemySpeed = 1.0f;
-            damageable.InflictDamage(damage);
+            if(damageable.gameObject.name == "Character1_Head")
+            {
+                damageable.InflictDamage(60f);
+            }
+            else
+            {
+                damageable.InflictDamage(damage);
+            }
         }
         if(impactVFX != null)
         {
@@ -172,7 +179,7 @@ public class ProjectileStandard : MonoBehaviour
             if (damageable)
             {
                 impactVFXInstance = Instantiate(impactVFX[1],
-                point + normal * impactVFXSpawnOffset,
+                point,
                 Quaternion.LookRotation(normal));
             }
             else
