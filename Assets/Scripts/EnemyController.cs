@@ -77,7 +77,7 @@ public class EnemyController : MonoBehaviour
             //isSet = false;
             Idle();
         }
-        if ((inSight || isChase) && !playerInAttackRange && !isDead)
+        if ((inSight || isChase) && !playerInAttackRange && !isDead && state !="attacking")
         {
             //if (!isSet)
             //{
