@@ -254,7 +254,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -288,24 +288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookSensitivity: 1
   bag: {fileID: 0}
---- !u!114 &6257295873842925010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3417729945504043058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3a3a784168f404dacdd34a71e75f29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingWeapons:
-  - {fileID: 2207743777928703465, guid: cb20bb7940b1b48d88f6c42d35b0f018, type: 3}
-  AmmoCountText: {fileID: 0}
-  activeWeapon: {fileID: 0}
-  weaponCamera: {fileID: 1739097878}
-  WeaponParentSocket: {fileID: 1064734304}
 --- !u!114 &766317025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,3 +349,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iLastEntered: {fileID: 0}
+--- !u!114 &6257295873842925010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3417729945504043058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3a3a784168f404dacdd34a71e75f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingWeapons:
+  - {fileID: 2207743777928703465, guid: cb20bb7940b1b48d88f6c42d35b0f018, type: 3}
+  AmmoCountText: {fileID: 0}
+  activeWeapon: {fileID: 0}
+  weaponCamera: {fileID: 1739097878}
+  WeaponParentSocket: {fileID: 1064734304}
