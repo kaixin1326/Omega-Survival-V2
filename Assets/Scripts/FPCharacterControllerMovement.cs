@@ -36,7 +36,7 @@ public class FPCharacterControllerMovement : MonoBehaviour
     private void Update()
     {
         UpdateStaminaInfo(stamina.ToString());
-        float currentSpeed = WalkSpeed;
+        float currentSpeed = (Input.GetKey(KeyCode.LeftShift) && (!characterController.isGrounded) && stamina >= 30) ? RunningSpeed : WalkSpeed;
         if (characterController.isGrounded)
         {
             //实现移动
@@ -47,10 +47,6 @@ public class FPCharacterControllerMovement : MonoBehaviour
             movementDirection = characterTransform.TransformDirection(new Vector3(Horizontal, 0, Vertical));
 
             //实现跳跃
-            if (Input.GetButtonDown("Jump"))
-            {
-                movementDirection.y = JumpHeight;
-            }
             //实现左shift加速
             if (Input.GetKey(KeyCode.LeftShift) && stamina >= 2)
             {
@@ -80,6 +76,11 @@ public class FPCharacterControllerMovement : MonoBehaviour
                 }
             }
 
+            if (Input.GetButtonDown("Jump"))
+            {
+                movementDirection.y = JumpHeight;
+            }
+
             //实现ctrl下蹲
             if (Input.GetKeyDown(KeyCode.C))
             {
@@ -87,6 +88,17 @@ public class FPCharacterControllerMovement : MonoBehaviour
                 var currentHeight = isCrouched ? originHeight : CrouchHeight;
                 StartCoroutine(DoCrouch(currentHeight));
                 isCrouched = !isCrouched;
+            }
+        }
+        else
+        {
+            if(!Input.GetKey(KeyCode.LeftShift) && stamina <= 399)
+            {
+                stamina += 1;
+            }
+            if(Input.GetKey(KeyCode.LeftShift) && stamina >= 2)
+            {
+                stamina -= 2;
             }
         }
         //实现重力
