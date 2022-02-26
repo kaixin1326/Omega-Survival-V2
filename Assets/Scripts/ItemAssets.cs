@@ -14,5 +14,6 @@ public class ItemAssets : MonoBehaviour
     public Sprite ammoSprite;
     public Sprite maskSprite;
     public Sprite medkitSprite;
+    public Sprite syringeSprite;
 
 }

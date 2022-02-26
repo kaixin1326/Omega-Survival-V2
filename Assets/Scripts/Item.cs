@@ -8,7 +8,8 @@ public class Item
     {
         Ammo,
         Mask,
-        Medkit
+        Medkit,
+        Syringe
     }
 
     public ItemType itemType;
@@ -23,6 +24,7 @@ public class Item
             case ItemType.Ammo: return ItemAssets.Instance.ammoSprite;
             case ItemType.Mask: return ItemAssets.Instance.maskSprite;
             case ItemType.Medkit: return ItemAssets.Instance.medkitSprite;
+            case ItemType.Syringe: return ItemAssets.Instance.syringeSprite;
         }
     }
 
@@ -34,6 +36,7 @@ public class Item
             case ItemType.Ammo:
             case ItemType.Mask:
             case ItemType.Medkit:
+            case ItemType.Syringe:
                 return true;
         }
     }

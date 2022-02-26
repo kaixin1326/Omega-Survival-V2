@@ -15,7 +15,7 @@ public class GhoulDamge : MonoBehaviour
         PlayerDamageable damageable = col.GetComponent<PlayerDamageable>();
         if (damageable && GetComponent<EnemyController>().state == "attacking")
         {
-            damageable.InflictDamage(10.0f);
+            damageable.InflictDamage(5.0f);
         }
     }
 }
