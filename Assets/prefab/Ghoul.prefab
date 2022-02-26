@@ -160,6 +160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856143175933622737}
+  - component: {fileID: 7214045635369875140}
   m_Layer: 0
   m_Name: Character1_RightHandRing1
   m_TagString: Untagged
@@ -182,6 +183,19 @@ Transform:
   m_Father: {fileID: 6855913888420603149}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -41.687614, y: -122.615524, z: 88.78669}
+--- !u!65 &7214045635369875140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6856918965775339431}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6856937947494450141
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,9 +359,9 @@ BoxCollider:
   m_GameObject: {fileID: 6856964676974129341}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.4, z: 1.4}
+  m_Size: {x: 1.6, y: 1.4, z: 2}
   m_Center: {x: -0.39583027, y: -0.21873224, z: 0.007519128}
 --- !u!1 &6856994705152991491
 GameObject:
@@ -1710,6 +1724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856136242592420331}
+  - component: {fileID: 197030085918193504}
   m_Layer: 0
   m_Name: Character1_LeftHandRing1
   m_TagString: Untagged
@@ -1732,6 +1747,19 @@ Transform:
   m_Father: {fileID: 6862129561353428661}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 41.687836, y: 122.615234, z: 88.7866}
+--- !u!65 &197030085918193504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6858596513115025755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6858602225006222917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,7 +2261,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855913888420603149}
-  - component: {fileID: 4251318691363025997}
   m_Layer: 0
   m_Name: Character1_RightHand
   m_TagString: Untagged
@@ -2260,19 +2287,6 @@ Transform:
   m_Father: {fileID: 6855671346505132271}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -34.431976, y: -47.306416, z: 3.047823}
---- !u!65 &4251318691363025997
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6858811577187078105}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.4, z: 1.4}
-  m_Center: {x: -0.2883872, y: -0.3000389, z: -0.09432097}
 --- !u!1 &6858833479480289157
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,8 +2753,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2
-  m_Speed: 4.2
-  m_Acceleration: 3
+  m_Speed: 6
+  m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1.8
