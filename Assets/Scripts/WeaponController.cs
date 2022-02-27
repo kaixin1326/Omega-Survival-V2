@@ -65,6 +65,8 @@ public class WeaponController : MonoBehaviour
         AK47Reload = (AudioSource)as_array[1];
         AK47shoot.clip = a1[0];
         AK47Reload.clip = a1[1];
+        Debug.Log(as_array[0]);
+       
     }
 
     // Update is called once per frame
@@ -111,8 +113,12 @@ public class WeaponController : MonoBehaviour
     private void HandleShoot()
     {
         //射出弹道
-        AK47shoot.Play();
-        if(projectilePrefab != null)
+        if (!AK47shoot.isPlaying)
+        {
+            AK47shoot.Play();
+        }
+        
+        if (projectilePrefab != null)
         {
             //方向位置和火焰方向一致
             Vector3 shotDirection = weaponMuzzle.forward;
@@ -136,16 +142,18 @@ public class WeaponController : MonoBehaviour
     {
         if (CurrentAmmo == AmmoInMag || CurrentAmmoCarried == 0) return false;
         var AmmoCount = AmmoInMag - CurrentAmmo;
-        
         isReloaded = false;
-        Invoke("Reload", 2);
+        if (!AK47Reload.isPlaying)
+        {
+            AK47Reload.Play();
+        }
+        Invoke("Reload", 2.0f);
         //Reload();
         return true;
     }
 
     private void Reload()
     {
-        AK47Reload.Play();
         var AmmoCount = AmmoInMag - CurrentAmmo;
 
 

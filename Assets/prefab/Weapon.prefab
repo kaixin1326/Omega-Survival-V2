@@ -79,7 +79,7 @@ MonoBehaviour:
   weaponMuzzle: {fileID: 7892729772116870615}
   muzzleFlashPrefab: {fileID: 6060935667144873308, guid: 633222868c31065429be4f5819739dee, type: 3}
   a1:
-  - {fileID: 8300000, guid: 16426dfa93bbf43cb8439bf0e44c803f, type: 3}
+  - {fileID: 8300000, guid: 74e5b4aeeb67940c0a05ff45f52cbf02, type: 3}
   - {fileID: 8300000, guid: 8be352f1b5fb043bcb085c39bdbea383, type: 3}
   delayBetweenShots: 0.1
   projectilePrefab: {fileID: 8165180236080910705, guid: d9e9dd9b59437445ca9d62f8104733df, type: 3}
