@@ -16,7 +16,10 @@ public class Health : MonoBehaviour
 
     public Text HealthText;
     public Text InfectionText;
-    public Text GameStat;
+
+    public Text resultText;
+    public GameObject resultMenu;
+
     public Image damageScreen;
     Color alpha;
     public float lastDamageTime = -1;
@@ -32,6 +35,8 @@ public class Health : MonoBehaviour
         infectionInterval = 3f;
 
         alpha = damageScreen.color;
+
+        resultMenu.SetActive(false);
 
     }
 
@@ -111,23 +116,23 @@ public class Health : MonoBehaviour
         {
             if (isDead)
             {
-                GameStat.text = "Game Over!";
+                resultText.text = "Game Over!";
+                resultMenu.SetActive(true);
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
                 yield return new WaitForSecondsRealtime(1);
                 Time.timeScale = 0f;
             }
 
             if (isInfected)
             {
-                GameStat.text = "You are infected!";
+                resultText.text = "You are infected!";
+                resultMenu.SetActive(true);
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
                 yield return new WaitForSecondsRealtime(1);
                 Time.timeScale = 0f;
             }
-
-            // else 
-            // {
-            //     GameStat.text = "";
-            //     Time.timeScale = 1;
-            // }
         }
 
     }
