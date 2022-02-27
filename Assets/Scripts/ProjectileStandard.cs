@@ -25,6 +25,10 @@ public class ProjectileStandard : MonoBehaviour
 
     public float damage;
 
+    public AudioSource headShotAudio;
+
+    private GameObject FPcharacterController;
+
     private ProjectileBase _projectileBase;
 
     private Vector3 _velocity;
@@ -74,7 +78,7 @@ public class ProjectileStandard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        FPcharacterController = GameObject.Find("FPCharacterControlller_copy");
     }
 
     // Update is called once per frame
@@ -163,10 +167,14 @@ public class ProjectileStandard : MonoBehaviour
             // Vector3 direction = normal;
             // direction.y = 0;
             // rb.AddForce(direction.normalized * 1, ForceMode.Impulse);
-            //damageable.getAncestor(damageable.gameObject).GetComponent<EnemyController>().enemySpeed = 1.0f;
-            if(damageable.gameObject.name == "Character1_Head")
+            EnemyController damageableAncestor = damageable.getAncestor(damageable.gameObject).GetComponent<EnemyController>();
+            if (damageable.gameObject.name == "Character1_Head")
             {
                 damageable.InflictDamage(60f);
+                if(damageableAncestor.health <= 0)
+                {
+                    FPcharacterController.GetComponent<AudioManager>().PlayHeadShotAudio();
+                }
             }
             else
             {
