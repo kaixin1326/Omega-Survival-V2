@@ -11,6 +11,9 @@ public class PlayerInputHandler : MonoBehaviour
     public float lookSensitivity = 1f;
 
     public GameObject bag;
+    public GameObject menu;
+    public GameObject setting;
+    private bool menuOpened = false;
     private bool bagOpened = false;
 
     private void Awake()
@@ -25,6 +28,8 @@ public class PlayerInputHandler : MonoBehaviour
         Cursor.visible = false;
 
         bag.SetActive(false);
+        menu.SetActive(false);
+        setting.SetActive(false);
     }
 
     public Vector3 GetMoveInput()
@@ -70,9 +75,24 @@ public class PlayerInputHandler : MonoBehaviour
     void Update()
     {
         //press esc to quit game
-        if (Input.GetKey("escape"))
+        if (Input.GetKeyDown("escape"))
         {
-            Application.Quit();
+            if (menuOpened)
+            {
+                menu.SetActive(false);
+                menuOpened = false;
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                ResumeGame();
+            }
+            else
+            {
+                menu.SetActive(true);
+                menuOpened = true;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                PauseGame();
+            }
         }
 
         if (Input.GetKey("backspace"))
@@ -81,7 +101,7 @@ public class PlayerInputHandler : MonoBehaviour
         }
 
         // press tab to open bag
-        if (Input.GetKeyDown("tab"))
+        if (Input.GetKeyDown("tab") && !menuOpened)
         {
             if (bagOpened)
             {
@@ -89,6 +109,7 @@ public class PlayerInputHandler : MonoBehaviour
                 bagOpened = false;
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
+                ResumeGame();
             }
             else
             {
@@ -96,7 +117,16 @@ public class PlayerInputHandler : MonoBehaviour
                 bagOpened = true;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
+                PauseGame();
             }
         }
+    }
+    void PauseGame ()
+    {
+        Time.timeScale = 0;
+    }
+    void ResumeGame ()
+    {
+        Time.timeScale = 1;
     }
 }
