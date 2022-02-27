@@ -64,7 +64,7 @@ public class Health : MonoBehaviour
             // alpha.a += 2*(damage / health);\
             if (health > 50)
             {
-                alpha.a += 0.1f;
+                alpha.a += 0.2f;
             }
             else
             {
