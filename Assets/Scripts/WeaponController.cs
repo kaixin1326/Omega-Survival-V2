@@ -18,7 +18,13 @@ public class WeaponController : MonoBehaviour
     //枪口火焰prefab
     public GameObject muzzleFlashPrefab;
     //
-    public Vector3 muzzleWorldVelocity{ get; private set; } 
+    public Vector3 muzzleWorldVelocity{ get; private set; }
+
+    private AudioSource AK47shoot;
+
+    private AudioSource AK47Reload;
+
+    public AudioClip[] a1;
     //两次射击间隔
     public float delayBetweenShots = 0.1f;
     //上一次射击时间
@@ -52,6 +58,13 @@ public class WeaponController : MonoBehaviour
         CurrentAmmo = AmmoInMag;
         CurrentAmmoCarried = 60;
         inventory = GetComponentInParent<PickUp>().inventory;
+        this.gameObject.AddComponent<AudioSource>();
+        this.gameObject.AddComponent<AudioSource>();
+        var as_array = this.gameObject.GetComponents(typeof(AudioSource));
+        AK47shoot = (AudioSource)as_array[0];
+        AK47Reload = (AudioSource)as_array[1];
+        AK47shoot.clip = a1[0];
+        AK47Reload.clip = a1[1];
     }
 
     // Update is called once per frame
@@ -98,6 +111,7 @@ public class WeaponController : MonoBehaviour
     private void HandleShoot()
     {
         //射出弹道
+        AK47shoot.Play();
         if(projectilePrefab != null)
         {
             //方向位置和火焰方向一致
@@ -131,6 +145,7 @@ public class WeaponController : MonoBehaviour
 
     private void Reload()
     {
+        AK47Reload.Play();
         var AmmoCount = AmmoInMag - CurrentAmmo;
 
 
