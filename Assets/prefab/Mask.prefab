@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4897952761424846721}
   - component: {fileID: 3017789087555711891}
   - component: {fileID: 1049874332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 5640131478702182932}
   - component: {fileID: 5640131478702182931}
   - component: {fileID: 5640131478702182935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mask
   m_TagString: CollectableObj
   m_Icon: {fileID: 0}

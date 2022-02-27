@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855674452348672181}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862086578670824333}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855634182685742739}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghoul:Volume4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6856143175933622737}
   - component: {fileID: 7214045635369875140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 6862144683856988559}
   - component: {fileID: 929676492970195945}
   - component: {fileID: 267235679981760165}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 6856122979395326165}
   - component: {fileID: 1006766400470714660}
   - component: {fileID: 4206729643518071809}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6862129561353428661}
   - component: {fileID: 8690345246619275440}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 6855717861304175055}
   - component: {fileID: 227606015254567427}
   - component: {fileID: 2650670676713755916}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 6862214302771992189}
   - component: {fileID: 2406386653953858801}
   - component: {fileID: 6820120775470296893}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861839323817330929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861916689615209971}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862038862426825871}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862018521362764713}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856094383288230091}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856084040108039965}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,7 +620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855632093392968635}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghoul:transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855920617846399411}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855949602407397867}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855850784275309849}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855690466439852729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 6855671346505132271}
   - component: {fileID: 2335363343789353043}
   - component: {fileID: 2635576233890580349}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +835,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855914796534120437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -868,7 +868,7 @@ GameObject:
   - component: {fileID: 6855758581319868713}
   - component: {fileID: 1227373760573541070}
   - component: {fileID: 8574124391125667444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +925,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861831089178451415}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -956,7 +956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861797268255807919}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 6855747649659693409}
   - component: {fileID: 3117673643461905777}
   - component: {fileID: 7785205032454785656}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,7 +1048,7 @@ GameObject:
   - component: {fileID: 6856038990231823099}
   - component: {fileID: 5015711348621705268}
   - component: {fileID: 3249213003731623005}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1105,7 +1105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861917665750051877}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1138,7 +1138,7 @@ GameObject:
   - component: {fileID: 6862033754648698709}
   - component: {fileID: 5860136650073185580}
   - component: {fileID: 3905966319750061148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1195,7 +1195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862231149595560643}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1226,7 +1226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855680774101661773}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1256,7 +1256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862121324651326923}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghoul:Tube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1289,7 +1289,7 @@ GameObject:
   - component: {fileID: 6861822197363610151}
   - component: {fileID: 5065914939453598073}
   - component: {fileID: 8971085266436744537}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1348,7 +1348,7 @@ GameObject:
   - component: {fileID: 6862252586723700055}
   - component: {fileID: 6510376147949549595}
   - component: {fileID: 3367056337689068322}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1405,7 +1405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862256292711451151}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1435,7 +1435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862211846859743875}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1466,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862142060416201711}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_Reference
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1497,7 +1497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861913430095031585}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1527,7 +1527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856111988146419113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,7 +1558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862359392368175273}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1589,7 +1589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855840224620353739}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1619,7 +1619,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856164092328298385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1650,7 +1650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855839433812613229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1682,7 +1682,7 @@ GameObject:
   - component: {fileID: 6862199740803187953}
   - component: {fileID: 3153789984404428909}
   - component: {fileID: 6448582344906070052}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1742,7 +1742,7 @@ GameObject:
   - component: {fileID: 6856040608575288113}
   - component: {fileID: 661684575410032437}
   - component: {fileID: 579711599755432069}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1799,7 +1799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861799030738465749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1830,7 +1830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862327690194564633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghoul:transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1861,7 +1861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6856136242592420331}
   - component: {fileID: 197030085918193504}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1905,7 +1905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862011083909371807}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1937,7 +1937,7 @@ GameObject:
   - component: {fileID: 6855709816462653237}
   - component: {fileID: 2697988927644573760}
   - component: {fileID: 157257969298502289}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1994,7 +1994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861820821406238043}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2024,7 +2024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856077529947499935}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2055,7 +2055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861911345841236939}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2085,7 +2085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862348696739082437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2116,7 +2116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862153212055887903}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghoul:transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2146,7 +2146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862264078001319835}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeafRightForeArmRoll1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2176,7 +2176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855642164543069303}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2206,7 +2206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862305119970971991}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2237,7 +2237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855819450941121865}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2268,7 +2268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862186603075840667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghoul:Details
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2301,7 +2301,7 @@ GameObject:
   - component: {fileID: 6861869625041219555}
   - component: {fileID: 6945852532819344694}
   - component: {fileID: 8752412027722888872}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2360,7 +2360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856041685299935617}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2391,7 +2391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861935356276101329}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2422,7 +2422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862022357728289397}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2453,7 +2453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855913888420603149}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2488,7 +2488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862248363827825211}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeafLeftForeArmRoll1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2518,7 +2518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855619324697528467}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2548,7 +2548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856167408344447945}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_RightHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2579,7 +2579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6861808148097756157}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2610,7 +2610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6855650962137790675}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2641,7 +2641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6856122702002066521}
   - component: {fileID: 6828404233382327017}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghoul:Tube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2789,7 +2789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862128509615893539}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2819,7 +2819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6862046183639687381}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2858,7 +2858,7 @@ GameObject:
   - component: {fileID: 3293385248790168607}
   - component: {fileID: 9074829267915977522}
   - component: {fileID: 4935717291262704878}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghoul
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -3051,7 +3051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6856141601547279979}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character1_LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

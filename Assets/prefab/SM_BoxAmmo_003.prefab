@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1376977576533285873}
   - component: {fileID: 1376977576530342923}
   - component: {fileID: 1376977576531277651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BoxAmmo_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 1376977576533185559}
   - component: {fileID: 1376977576530307729}
   - component: {fileID: 1376977576531360003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_patron_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 1376977576674259202}
   - component: {fileID: 1376977576674259203}
   - component: {fileID: 2001077927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_BoxAmmo_003
   m_TagString: CollectableObj
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 6814727600197022513}
   - component: {fileID: 9206644793087478826}
   - component: {fileID: 6431851948163692006}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 457362983021702936}
   - component: {fileID: 5372106345824419342}
   - component: {fileID: 3714556666355621116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Syringe_Plunger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4969273210174268370}
   - component: {fileID: 4969273210174268371}
   - component: {fileID: 4969273210174268372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Syringe
   m_TagString: CollectableObj
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 2811378255873538423}
   - component: {fileID: 3699312970126628306}
   - component: {fileID: 5529036955034976491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Syringe_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 4969273211239839958}
   - component: {fileID: 4969273211239839956}
   - component: {fileID: 4969273211239839957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 3339143297347111215}
   - component: {fileID: 8782732444862678225}
   - component: {fileID: 1682952950212348629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Syringe_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
