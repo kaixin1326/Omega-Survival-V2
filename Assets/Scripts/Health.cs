@@ -45,17 +45,15 @@ public class Health : MonoBehaviour
 
             nextInfectionTime += infectionInterval;
             TakeInfection(1f);
-
-            if (lastDamageTime >= 0 && (Time.time - lastDamageTime) >= delay)
-            {
-                if (alpha.a <= 0) {
-                    lastDamageTime = -1;
-                }
-                else {
-                    alpha.a -= 0.01f;
-                    damageScreen.color = alpha;
-                }
-
+        }
+        if (lastDamageTime >= 0 && (Time.time - lastDamageTime) >= delay)
+        {
+            if (alpha.a <= 0) {
+                lastDamageTime = -1;
+            }
+            else {
+                alpha.a -= 0.01f;
+                damageScreen.color = alpha;
             }
         }
     }
