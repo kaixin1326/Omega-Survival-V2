@@ -24,6 +24,9 @@ public class WeaponController : MonoBehaviour
 
     private AudioSource AK47Reload;
 
+    private AudioSource AK47Continue;
+
+    private AudioSource AK47End;
     public AudioClip[] a1;
     //两次射击间隔
     public float delayBetweenShots = 0.1f;
@@ -60,13 +63,14 @@ public class WeaponController : MonoBehaviour
         inventory = GetComponentInParent<PickUp>().inventory;
         this.gameObject.AddComponent<AudioSource>();
         this.gameObject.AddComponent<AudioSource>();
+
         var as_array = this.gameObject.GetComponents(typeof(AudioSource));
         AK47shoot = (AudioSource)as_array[0];
         AK47Reload = (AudioSource)as_array[1];
         AK47shoot.clip = a1[0];
         AK47Reload.clip = a1[1];
-        Debug.Log(as_array[0]);
-       
+        AK47shoot.volume = 0.1f;
+        AK47Reload.volume = 0.2f;
     }
 
     // Update is called once per frame
@@ -113,11 +117,9 @@ public class WeaponController : MonoBehaviour
     private void HandleShoot()
     {
         //射出弹道
-        if (!AK47shoot.isPlaying)
-        {
-            AK47shoot.Play();
-        }
-        
+
+        AK47shoot.Play();
+
         if (projectilePrefab != null)
         {
             //方向位置和火焰方向一致
