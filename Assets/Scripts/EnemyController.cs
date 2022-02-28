@@ -30,6 +30,7 @@ public class EnemyController : MonoBehaviour
     public bool isChase = false;
     public string state = "idle";
     private Rigidbody _rigidbody;
+    [SerializeField]private Transform damagePopupTransform;
 
     private void Awake()
     {
@@ -127,7 +128,7 @@ public class EnemyController : MonoBehaviour
         // agent.SetDestination(player.position + distance);
 
         transform.LookAt(player);
-
+        // DI_System.CreateIndicator(this.transform);
         if (!alreadyAttacked)
         {
             //TODO:attack code here
@@ -146,6 +147,8 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        int dmg = (int)damage;
+        PopDmgManager.instance.DisplayDmg(dmg, damagePopupTransform);
 
         if(!isDead && health <= 0)
         {
