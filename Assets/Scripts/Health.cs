@@ -30,9 +30,9 @@ public class Health : MonoBehaviour
 
         isDead = false;
         isInfected = false;
-
+        nextInfectionTime = Time.time + infectionInterval;
         infectionRate = 25;
-        infectionInterval = 3f;
+        infectionInterval = 2f;
 
         alpha = damageScreen.color;
 
@@ -46,7 +46,7 @@ public class Health : MonoBehaviour
         UpdateInfectionInfo(infectionRate.ToString());
         StartCoroutine(PauseGame());
 
-        if (Time.time >= nextInfectionTime && !masked) {
+        if (Time.time >= nextInfectionTime) {
 
             nextInfectionTime += infectionInterval;
             TakeInfection(1f);

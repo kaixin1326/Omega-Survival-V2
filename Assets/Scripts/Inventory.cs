@@ -6,6 +6,7 @@ using System;
 public class Inventory
 {
     private List<Item> itemList;
+    private float MaskOnTime;
 
     public event EventHandler OnItemListChanged;
    
@@ -16,6 +17,16 @@ public class Inventory
         //一開始先有60發子彈(暫定)
         AddItem(new Item { itemType = Item.ItemType.Ammo, amount = 60 });
     }
+
+    private void Update()
+    {
+        if (Time.time - MaskOnTime >= 10f) {
+            Health _health = GameObject.Find("FPCharacterControlller_copy").GetComponent<Health>();
+            _health.infectionInterval = 2f;
+            _health.masked = false;
+        }
+    }
+
 
     public void AddItem(Item item)
     {
@@ -70,6 +81,7 @@ public class Inventory
                     Health _health = GameObject.Find("FPCharacterControlller_copy").GetComponent<Health>();
                     _health.infectionRate = 0;
                     AddItem(new Item { itemType = Item.ItemType.Syringe, amount = -1 });
+                    MaskOnTime = Time.time;
                 }
                 break;
         }
