@@ -61,6 +61,7 @@ public class Health : MonoBehaviour
                 damageScreen.color = alpha;
             }
         }
+
     }
 
         public void TakeDamage(float damage)
