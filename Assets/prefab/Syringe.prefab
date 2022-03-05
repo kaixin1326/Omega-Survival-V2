@@ -144,8 +144,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.11134016, y: 0.054262053, z: 0.20905665}
-  m_Center: {x: 0.0042413934, y: -0.0055432636, z: 0.025943862}
+  m_Size: {x: 0.28817353, y: 0.08813783, z: 0.3651239}
+  m_Center: {x: 0.0116132945, y: 0.011394641, z: 0.03909026}
 --- !u!114 &4969273210174268372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ Halo:
   m_Color:
     serializedVersion: 2
     rgba: 4283622119
-  m_Size: 0.15
+  m_Size: 0.1
 --- !u!114 &4969273211239839957
 MonoBehaviour:
   m_ObjectHideFlags: 0
