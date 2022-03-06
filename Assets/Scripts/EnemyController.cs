@@ -102,10 +102,9 @@ public class EnemyController : MonoBehaviour
             isChase = true;
             ChasePlayer();
         }
-        if (inSight && playerInAttackRange && !isDead)
+        if ((inSight && playerInAttackRange && !isDead))
         {
             //isSet = false;
-            zombieShout.Play();
             AttackPlayer();
         }
 
@@ -138,6 +137,10 @@ public class EnemyController : MonoBehaviour
 
     private void AttackPlayer()
     {
+        if (!zombieShout.isPlaying)
+        {
+            zombieShout.Play();
+        }
         anime.Play("Attack1");
         state = "attacking";
         // agent.SetDestination(player.position + distance);
