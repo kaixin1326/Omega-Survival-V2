@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
     //attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
-
+    public AudioClip[] a1;
     public float sightRange, attackRange;
     [Range(0,360)]
     public float angle;
@@ -29,6 +29,9 @@ public class EnemyController : MonoBehaviour
     //public bool isSet = false;
     public bool isChase = false;
     public string state = "idle";
+
+    private AudioSource zombieShout;
+    private AudioSource zombieDead;
     private Rigidbody _rigidbody;
     [SerializeField]private Transform damagePopupTransform;
 
@@ -41,7 +44,18 @@ public class EnemyController : MonoBehaviour
         anime = GetComponent<Animation>();
         anime["Death"].wrapMode = WrapMode.Once;
     }
-
+    private void Start()
+    {
+        this.gameObject.AddComponent<AudioSource>();
+        this.gameObject.AddComponent<AudioSource>();
+        var as_array = this.gameObject.GetComponents(typeof(AudioSource));
+        zombieShout = (AudioSource)as_array[0];
+        zombieDead = (AudioSource)as_array[1];
+        zombieShout.clip = a1[Random.Range(1, 3)];
+        zombieDead.clip = a1[0];
+        zombieShout.volume = 0.3f;
+        zombieDead.volume = 0.1f;
+    }
     private void Update()
     {
         //check if player is in sight
@@ -91,6 +105,7 @@ public class EnemyController : MonoBehaviour
         if (inSight && playerInAttackRange && !isDead)
         {
             //isSet = false;
+            zombieShout.Play();
             AttackPlayer();
         }
 
@@ -153,7 +168,7 @@ public class EnemyController : MonoBehaviour
         if(!isDead && health <= 0)
         {
             isDead = true;
-
+            zombieDead.Play();
             anime.Play("Death");
             state = "dead";
             agent.isStopped = true;

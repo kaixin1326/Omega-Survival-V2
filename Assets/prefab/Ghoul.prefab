@@ -3013,6 +3013,10 @@ MonoBehaviour:
     m_Bits: 0
   health: 120
   timeBetweenAttacks: 1
+  a1:
+  - {fileID: 8300000, guid: d029cd362203c45c3a2cf162f0ede1fc, type: 3}
+  - {fileID: 8300000, guid: 95d5a6a0bdfe248fbbdf76efb54c3958, type: 3}
+  - {fileID: 8300000, guid: 5ab574ca3794f4237b28a3cbe3e64234, type: 3}
   sightRange: 20
   attackRange: 1.8
   angle: 360
