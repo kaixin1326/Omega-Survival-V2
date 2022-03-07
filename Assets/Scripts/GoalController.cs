@@ -7,11 +7,14 @@ public class GoalController : MonoBehaviour
 {
     public GameObject enemyFolder;
     public Text enemyCount;
+    public Text currentGoal;
 
     public Text resultText;
     public GameObject resultMenu;
 
     private int startEnemyCount;
+    private bool isInstantiate = false;
+    public GameObject bossPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +25,25 @@ public class GoalController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int killed = startEnemyCount - enemyFolder.transform.childCount;
+        if (!isInstantiate){
+            int killed = startEnemyCount - enemyFolder.transform.childCount;
+            enemyCount.text = killed + "/" + startEnemyCount;
+        }
 
-        enemyCount.text = killed + "/" + startEnemyCount;
-
-        if (enemyFolder.transform.childCount == 0)
+        if (enemyFolder.transform.childCount >0)
         {
-            WinGame();
+            // WinGame();
+            
+            if(isInstantiate == false)
+            {
+                currentGoal.text = "    Kill Boss: "; 
+                isInstantiate = true;
+                Vector3 pos = new Vector3(438f,-9f,453f);
+                // Vector3(-510.937134,-227.34436,-529.339355)
+                GameObject boss = GameObject.Instantiate(bossPrefab, pos, Quaternion.identity);
+                boss.transform.parent = GameObject.Find("Enemy").transform;
+                enemyCount.text = 0 + "/" + 1;
+            }
         }
     }
 

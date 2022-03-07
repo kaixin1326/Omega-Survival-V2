@@ -161,6 +161,7 @@ public class ProjectileStandard : MonoBehaviour
     private void OnHit(Vector3 point, Vector3 normal,Collider collider)
     {
         Damageable damageable = collider.GetComponent<Damageable>();
+        BossDamageable bossdamageable = collider.GetComponent<BossDamageable>();
         if (damageable)
         {
             // Rigidbody rb = collider.GetComponent<Rigidbody>();
@@ -181,9 +182,34 @@ public class ProjectileStandard : MonoBehaviour
                 damageable.InflictDamage(damage);
             }
         }
+        
+        if (bossdamageable)
+        {
+            // Rigidbody rb = collider.GetComponent<Rigidbody>();
+            // Vector3 direction = normal;
+            // direction.y = 0;
+            // rb.AddForce(direction.normalized * 1, ForceMode.Impulse);
+            BossController bossdamageableAncestor = bossdamageable.getAncestor(bossdamageable.gameObject).GetComponent<BossController>();
+            if (bossdamageable.gameObject.name == "Eyes")
+            {
+                bossdamageable.InflictDamage(100f);
+            }
+            else
+            {
+                bossdamageable.InflictDamage(damage);
+            }
+        }
+
         if(impactVFX != null)
         {
             GameObject impactVFXInstance;
+            if(bossdamageable)
+            {
+                impactVFX[1].transform.localScale = new Vector3(1, 4, 10);
+                impactVFXInstance = Instantiate(impactVFX[1],
+                point,
+                Quaternion.LookRotation(normal));
+            }
             if (damageable)
             {
                 impactVFXInstance = Instantiate(impactVFX[1],
