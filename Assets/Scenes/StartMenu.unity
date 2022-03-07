@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -921,7 +921,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980708981}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -953,7 +953,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 980708984}
   m_OnClick:
     m_PersistentCalls:
@@ -985,42 +985,17 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WASD to move
-
-    Space to Jump
-
-    Shift to Sprint
-
-    C to Croush
-
-    E
-    to pick up items
-
-    Tab to open inventory and click on inventory items to use
-    them
-
-    +/- to adjust mouse sensitivity
-
-
-    Consumables:
-
-    Masks make
-    infection grow slower,
-
-    Vaccines clear infection rate
-
-    MedKit restores
-    health
-
-    Ammo increases your backup ammo
-
-'
+  m_Text: "Control\nMove: \t       \t       WASD\nJump: \t                Space\nSprint:                
+    Left shift\nCrouch: \t       \t    C\nPick up:        \t    E\nInventory:   
+    \t        Tab\nMouse sensitivity:     +/-\n\nConsumables\nMasks: \t\tMake infection
+    grow slower,\nVaccines: \t\tClear infection rate\nMedKit: \t\tRestores health\nAmmo:
+    \t\t\tIncreases your backup ammo\n"
 --- !u!222 &980708985
 CanvasRenderer:
   m_ObjectHideFlags: 0

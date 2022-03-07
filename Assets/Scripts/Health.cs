@@ -107,13 +107,13 @@ public class Health : MonoBehaviour
 
         private void UpdateHealthInfo(float _health)
         {
-            HealthText.text = "Health: " ;
+            HealthText.text = "Health" ;
         HealthSlider.value = _health;
         }
 
         private void UpdateInfectionInfo(float _infection)
         {
-            InfectionText.text = "Infection: " ;
+            InfectionText.text = "Infection" ;
         InfectionSlider.value = _infection;
     }
 

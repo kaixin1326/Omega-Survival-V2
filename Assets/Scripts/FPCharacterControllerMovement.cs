@@ -119,7 +119,7 @@ public class FPCharacterControllerMovement : MonoBehaviour
 
     private void UpdateStaminaInfo(float _stamina)
     {
-        StaminaText.text = "Stamina: " ;
+        StaminaText.text = "Stamina" ;
         StaminaSlider.value = _stamina;
     }
 }
