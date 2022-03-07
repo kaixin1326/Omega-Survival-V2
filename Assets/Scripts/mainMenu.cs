@@ -7,6 +7,9 @@ public class mainMenu : MonoBehaviour
     public Button startGame;
     public Button options;
     public Button quitGame;
+    public Button InstructionsConfirm;
+    public Button instructions;
+    public GameObject InstructionPage;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +21,31 @@ public class mainMenu : MonoBehaviour
 
         Button quit = quitGame.GetComponent<Button>();
 		quit.onClick.AddListener(QuitGame);
+
+        Button instruction = instructions.GetComponent<Button>();
+        instruction.onClick.AddListener(Instructions);
+
+        Button instructionsConfirm = InstructionsConfirm.GetComponent<Button>();
+        instructionsConfirm.onClick.AddListener(instructionConfirm);
+
     }
 
     void StartGame()
     {
         SceneManager.LoadScene("Scene_A");
     }
+
+    void Instructions()
+    {
+        InstructionPage.SetActive(true);
+    }
+
+    void instructionConfirm()
+    {
+        InstructionPage.SetActive(false);
+    }
+
+
     void Options()
     {
         
