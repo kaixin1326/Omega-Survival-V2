@@ -20,18 +20,17 @@ public class BossController : MonoBehaviour
     public float sightRange, attackRange;
     [Range(0,360)]
     public float angle;
-    public bool playerInSightRange, playerInAttackRange;
+    
     public Vector3 distance;
     public bool inSight;
     private Animation anime;
-    public float enemySpeed = 2.0f;
     public bool isDead = false;
     //public bool isSet = false;
     public bool isChase = false;
     public string state = "idle";
 
-    private AudioSource zombieShout; // NEED TO CHANGE!!!!
-    private AudioSource zombieDead; // NEED TO CHANGE!!!!
+    private bool playerInSightRange, playerInAttackRange;
+    public AudioSource shake;
     private Rigidbody _rigidbody; 
     [SerializeField]private Transform damagePopupTransform;
 
@@ -40,22 +39,10 @@ public class BossController : MonoBehaviour
         player = GameObject.Find("FPCharacterControlller_copy").transform;
         agent = GetComponent<NavMeshAgent>();
         _rigidbody = GetComponent<Rigidbody>();
-        agent.speed = 6.0f;
         anime = GetComponent<Animation>();
         anime["large_Death"].wrapMode = WrapMode.Once;
     }
-    private void Start()
-    {
-        this.gameObject.AddComponent<AudioSource>();
-        this.gameObject.AddComponent<AudioSource>();
-        var as_array = this.gameObject.GetComponents(typeof(AudioSource));
-        // zombieShout = (AudioSource)as_array[0];
-        // zombieDead = (AudioSource)as_array[1];
-        // zombieShout.clip = a1[Random.Range(1, 3)];
-        // zombieDead.clip = a1[0];
-        // zombieShout.volume = 0.3f;
-        // zombieDead.volume = 0.1f;
-    }
+
     private void Update()
     {
         //check if player is in sight
@@ -123,15 +110,6 @@ public class BossController : MonoBehaviour
         agent.isStopped = false;
         anime.Play("large_Walk");
         state = "run";
-        //enemySpeed += 0.02f;
-        //if (enemySpeed >= 5.0f)
-        //{
-        //    enemySpeed = 5.0f;
-        //}
-        //agent.velocity = (player.position - transform.position).normalized * enemySpeed;
-        //agent.destination = player.position;
-        agent.speed = 8.0f;
-        agent.acceleration = 10.0f;
         agent.SetDestination(player.position);
     }
 
@@ -148,17 +126,16 @@ public class BossController : MonoBehaviour
 
         // transform.LookAt(player);
         // DI_System.CreateIndicator(this.transform);
-        agent.isStopped = true;
+        transform.LookAt(player);
         // anime.Play("large_Fighting_stance");
         if (!alreadyAttacked)
         {
             //TODO:attack code here
 
             alreadyAttacked = true;
-            anime["large_Atack_3"].speed = 0.5f;
+            anime["large_Atack_3"].speed = 0.6f;
             anime.Play("large_Atack_3");
             state = "attacking";
-            // transform.LookAt(player);
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }

@@ -11,10 +11,13 @@ public class GoalController : MonoBehaviour
 
     public Text resultText;
     public GameObject resultMenu;
-
+    public GameObject Player;
     private int startEnemyCount;
     private bool isInstantiate = false;
+    private bool isTransition = false;
+    private bool isTransitionComplete = false;
     public GameObject bossPrefab;
+    public GameObject Transition;
 
     // Start is called before the first frame update
     void Start()
@@ -25,19 +28,57 @@ public class GoalController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int killed = startEnemyCount - enemyFolder.transform.childCount;
         if (!isInstantiate){
-            int killed = startEnemyCount - enemyFolder.transform.childCount;
             enemyCount.text = killed + "/" + startEnemyCount;
         }
-
-        if (enemyFolder.transform.childCount >0)
+        //enemyFolder.transform.childCount == 0
+        if (isTransition)
+        {
+            Transition.SetActive(true);
+            Transform imageTransfrom = Transition.transform.GetChild(1);
+            Image image = imageTransfrom.gameObject.GetComponent<Image>();
+            Transform textTransform = Transition.transform.GetChild(0);
+            
+            Text TransitionText = textTransform.gameObject.GetComponent<Text>();
+            Color Icolor = image.color;
+            Color Tcolor = TransitionText.color;
+            if (!isTransitionComplete)
+            {
+                Icolor.a += 0.01f;
+                Tcolor.a += 0.02f;
+                image.color = Icolor;
+                TransitionText.color = Tcolor;
+                if (Icolor.a >= 1.0f)
+                {
+                    isTransitionComplete = true;
+                    Player.transform.position = new Vector3(410f, 17f, 453f);
+                    Player.GetComponent<CharacterController>().enabled = true;
+                }
+            }
+            else
+            {
+                Icolor.a -= 0.01f;
+                Tcolor.a -= 0.02f;
+                image.color = Icolor;
+                TransitionText.color = Tcolor;
+                if (Icolor.a <= 0.0f)
+                {
+                    isTransition = false;
+                }
+            }
+        }
+        //if (enemyFolder.transform.childCount == 0)
+        if (killed > 0)
         {
             // WinGame();
-            
+       
             if(isInstantiate == false)
             {
+                isTransition = true;
                 currentGoal.text = "    Kill Boss: "; 
                 isInstantiate = true;
+                Player.GetComponent<CharacterController>().enabled = false;
                 Vector3 pos = new Vector3(438f,-9f,453f);
                 // Vector3(-510.937134,-227.34436,-529.339355)
                 GameObject boss = GameObject.Instantiate(bossPrefab, pos, Quaternion.identity);

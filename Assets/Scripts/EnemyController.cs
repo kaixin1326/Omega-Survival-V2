@@ -20,16 +20,16 @@ public class EnemyController : MonoBehaviour
     public float sightRange, attackRange;
     [Range(0,360)]
     public float angle;
-    public bool playerInSightRange, playerInAttackRange;
+    
     public Vector3 distance;
     public bool inSight;
     private Animation anime;
-    public float enemySpeed = 2.0f;
     public bool isDead = false;
     //public bool isSet = false;
     public bool isChase = false;
     public string state = "idle";
 
+    private bool playerInSightRange, playerInAttackRange;
     private AudioSource zombieShout;
     private AudioSource zombieDead;
     private Rigidbody _rigidbody;

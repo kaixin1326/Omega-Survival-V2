@@ -11,11 +11,16 @@ public class AnimEventLarge : MonoBehaviour
     void EndAttacking()
     {
         GetComponent<BossController>().state = "run";
+        AudioSource shake = GetComponent<AudioSource>();
         CameraShaker.Instance.ShakeOnce(10f, 4f, .1f, 2f);
-
+        if (!shake.isPlaying)
+        {
+            shake.Play();
+        }
+        
         PlayerDamageable damageable = player.gameObject.GetComponent<PlayerDamageable>();
         float dist = Vector3.Distance(b, p);
-        if (damageable && dist < 6f)
+        if (damageable && dist < 5f)
         {
             damageable.InflictDamage(50.0f);
             DI_System.CreateIndicator(this.transform);

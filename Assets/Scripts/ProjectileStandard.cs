@@ -189,7 +189,7 @@ public class ProjectileStandard : MonoBehaviour
             // Vector3 direction = normal;
             // direction.y = 0;
             // rb.AddForce(direction.normalized * 1, ForceMode.Impulse);
-            BossController bossdamageableAncestor = bossdamageable.getAncestor(bossdamageable.gameObject).GetComponent<BossController>();
+            //BossController bossdamageableAncestor = bossdamageable.getAncestor(bossdamageable.gameObject).GetComponent<BossController>();
             if (bossdamageable.gameObject.name == "Eyes")
             {
                 bossdamageable.InflictDamage(100f);
@@ -210,7 +210,7 @@ public class ProjectileStandard : MonoBehaviour
                 point,
                 Quaternion.LookRotation(normal));
             }
-            if (damageable)
+            else if (damageable)
             {
                 impactVFXInstance = Instantiate(impactVFX[1],
                 point,
