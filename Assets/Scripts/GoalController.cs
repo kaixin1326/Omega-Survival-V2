@@ -69,7 +69,7 @@ public class GoalController : MonoBehaviour
             }
         }
         //if (enemyFolder.transform.childCount == 0)
-        if (killed > 0)
+        if (enemyFolder.transform.childCount == 0)
         {
             // WinGame();
        
