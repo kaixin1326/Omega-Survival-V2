@@ -6,7 +6,7 @@ using UnityEditor;
 public class BlinkEffect : MonoBehaviour
 {
     public float glowMaxSize;
-    public float timeDif = 0.01f;
+    public float timeDif = 0.1f;
     private float lasttime = 0;
     private bool isTrue = true;
 
@@ -23,7 +23,7 @@ public class BlinkEffect : MonoBehaviour
         //halo.FindProperty("m_Size").floatValue = Mathf.PingPong(Time.time, glowMaxSize);
         //halo.ApplyModifiedProperties();
         Component halo = GetComponent("Halo");
-        if(Time.time - lasttime >= timeDif)
+        if (Time.time - lasttime >= timeDif)
         {
             lasttime = Time.time;
             halo.GetType().GetProperty("enabled").SetValue(halo, !isTrue);
