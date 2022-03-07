@@ -70,7 +70,7 @@ public class WeaponController : MonoBehaviour
         AK47shoot.clip = a1[0];
         AK47Reload.clip = a1[1];
         AK47shoot.volume = 0.1f;
-        AK47Reload.volume = 0.2f;
+        AK47Reload.volume = 0.1f;
     }
 
     // Update is called once per frame
