@@ -85,6 +85,10 @@ public class GoalController : MonoBehaviour
                 boss.transform.parent = GameObject.Find("Enemy").transform;
                 enemyCount.text = 0 + "/" + 1;
             }
+            if(enemyFolder.transform.childCount == 0)
+            {
+                WinGame();
+            }
         }
     }
 
