@@ -16,6 +16,8 @@ public class Health : MonoBehaviour
 
     public Text HealthText;
     public Text InfectionText;
+    public Slider HealthSlider;
+    public Slider InfectionSlider;
 
     public Text resultText;
     public GameObject resultMenu;
@@ -42,8 +44,8 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        UpdateHealthInfo(health.ToString());
-        UpdateInfectionInfo(infectionRate.ToString());
+        UpdateHealthInfo(health);
+        UpdateInfectionInfo(infectionRate);
         StartCoroutine(PauseGame());
 
         if (Time.time >= nextInfectionTime) {
@@ -103,15 +105,17 @@ public class Health : MonoBehaviour
             }
         }
 
-        private void UpdateHealthInfo(string _health)
+        private void UpdateHealthInfo(float _health)
         {
-            HealthText.text = "Health: " + _health;
+            HealthText.text = "Health: " ;
+        HealthSlider.value = _health;
         }
 
-        private void UpdateInfectionInfo(string _infection)
+        private void UpdateInfectionInfo(float _infection)
         {
-            InfectionText.text = "Infection: " + _infection;
-        }
+            InfectionText.text = "Infection: " ;
+        InfectionSlider.value = _infection;
+    }
 
         IEnumerator PauseGame()
         {

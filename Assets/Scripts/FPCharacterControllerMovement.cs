@@ -16,6 +16,7 @@ public class FPCharacterControllerMovement : MonoBehaviour
     public float CrouchSpeed;
     public int stamina = 400;
     public Text StaminaText;
+    public Slider StaminaSlider;
     public float JumpHeight;
     public float Gravity = 9.8f;
     public float CrouchHeight;
@@ -35,7 +36,7 @@ public class FPCharacterControllerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        UpdateStaminaInfo(stamina.ToString());
+        UpdateStaminaInfo(stamina);
         float currentSpeed = (Input.GetKey(KeyCode.LeftShift) && (!characterController.isGrounded) && stamina >= 30) ? RunningSpeed : WalkSpeed;
         if (characterController.isGrounded)
         {
@@ -116,8 +117,9 @@ public class FPCharacterControllerMovement : MonoBehaviour
         }
     }
 
-    private void UpdateStaminaInfo(string _stamina)
+    private void UpdateStaminaInfo(float _stamina)
     {
-        StaminaText.text = "Stamina: " + _stamina;
+        StaminaText.text = "Stamina: " ;
+        StaminaSlider.value = _stamina;
     }
 }
